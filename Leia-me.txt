@@ -1,0 +1,7 @@
+- Será necessario instalar node.js
+
+- instalar o @angular/cli
+npm install -g @angular/cli
+
+- logo após na pasta onde vai estar o projeto rodar o comando ng serve
+ 
