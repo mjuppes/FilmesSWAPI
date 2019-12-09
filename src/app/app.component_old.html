@@ -1,0 +1,16 @@
+<h1>
+  {{title}}
+</h1>
+
+<hr />
+
+<p>
+    <Label>Acessando dados de : http://date.jsontest.com com get()</Label>  
+    </p>
+    <button (click)="onTestGet()">Teste GET Request</button>
+
+    <div *ngFor="let data of getData">{{data.title}}</div>
+
+<app-listagem-filmes></app-listagem-filmes>
+
+

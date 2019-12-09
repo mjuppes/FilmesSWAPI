@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.11.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>Home</title>
+  
+</head>
+<body>
+  <section class="menu cid-rJO502sHxP" once="menu" id="menu1-2">
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/w">html5 templates</a></section><section class="services5 cid-rJO73B8wFM" id="services5-4">
+    <!--Overlay-->
+    
+    <!--Container-->
+
+<!--    <button (click)="onSearchGetFilms('A New Hope')">Teste GET Request</button>-->
+
+    <div class="container">
+        <div class="row" >
+            <div class="form-group input-group">
+                <input name="consulta" id="txt_consulta" placeholder="Consultar Filme" type="text" class="form-control">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                <h2 class="align-left mbr-fonts-style m-0 display-2">
+                    {{title}}</h2>
+                
+            </div>
+
+           <div *ngFor="let data of getData.results">
+                <div class="card px-3 col-12">
+                    <div class="card-wrapper media-container-row media-container-row">
+                        <div class="card-box">
+                            <div class="top-line pb-3">
+                                <h4 class="card-title mbr-fonts-style display-5">
+                                    {{data.title}}
+                                </h4>
+                            </div>
+                            <div class="bottom-line">
+                                    Episódio : {{data.episode_id}}
+                            </div>
+                            <div class="bottom-line">
+                                <p class="mbr-text mbr-fonts-style m-0 b-descr display-7">
+                                    {{data.opening_crawl}}
+                                </p>
+                            </div>
+                            <br>
+                            <div class="bottom-line">
+                                    Diretor : {{data.director}}
+                                    <br>
+                                    Produção: {{data.producer}}
+                                    <br>
+                                    Data:  {{data.release_date}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+</body>
+</html>
