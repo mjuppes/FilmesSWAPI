@@ -6,13 +6,11 @@ import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import { ListagemFilmesComponent } from './listagem-filmes/listagem-filmes.component';
 import { CatalogFilmesService } from './catalog-filmes.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListagemFilmesComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

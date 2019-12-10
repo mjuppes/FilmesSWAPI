@@ -42,8 +42,9 @@
     <div class="container">
         <div class="row" >
             <div class="form-group input-group">
-                <input name="consulta" id="txt_consulta" placeholder="Consultar Filme" type="text" class="form-control">
+                <input name="consulta" id="txt_consulta" placeholder="Consultar Filme" type="text" [(ngModel)]="txt_consulta" class="form-control">
             </div>
+            <button (click)="searchFilm()"  class="btn btn-primary">Buscar</button>
         </div>
         <br>
         <div class="row">
@@ -51,7 +52,7 @@
             <div class="title pb-5 col-12">
                 <h2 class="align-left mbr-fonts-style m-0 display-2">
                     {{title}}</h2>
-                
+                    
             </div>
 
            <div *ngFor="let data of getData.results">
